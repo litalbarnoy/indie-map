@@ -13,8 +13,16 @@
 <body>
 <div id='map-one' class='map'> </div>
 <script>
+
 L.mapbox.accessToken = 'pk.eyJ1IjoibGl0YWxiYXJub3kiLCJhIjoiazh2OTdFYyJ9.66NbqOtfKhEV7d8fdbMqWw';
 L.mapbox.map('map-one', 'litalbarnoy.lmjhji6l');
+
+var map = L.mapbox.map('map-one', 'litalbarnoy.lmjhji6l', {
+    scrollWheelZoom: false,
+    legendControl: {
+        position: 'topright'
+    }
+})
 
 map.legendControl.addLegend('<strong>מפות הופעות - מוזיקת שוליים בתל אביב יפו</strong>');
 </script>
