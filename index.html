@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Indie-map by litalbarnoy</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    
-    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.7/mapbox.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.7/mapbox.css' rel='stylesheet' />
-  </head>
-  <body>
-      <h1 class="project-name">Indie-map</h1>
-  </body>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>Indie-map</title>
+  <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.7/mapbox.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.7/mapbox.css' rel='stylesheet' />
+  <style>
+    body { margin:0; padding:0; }
+    .map { position:absolute; top:0; bottom:0; width:100%; }
+  </style>
+</head>
+<body>
+<div id='map-one' class='map'> </div>
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoibGl0YWxiYXJub3kiLCJhIjoiazh2OTdFYyJ9.66NbqOtfKhEV7d8fdbMqWw';
+L.mapbox.map('map-one', 'examples.map-i86l3621');
+</script>
+</body>
 </html>
-
